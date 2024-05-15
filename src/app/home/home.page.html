@@ -1,20 +1,45 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Seja bem-vindo!</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Descubra as características casas de Hogwarts!</p>
+    </ion-card-content>
+  </ion-card>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Sobre o App</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Este app descreve as características de cada uma das quatro casas:
+        Grifinória, Corvinal, Lufa-Lufa ou Sonserina. Aqui você pode conhecer
+        melhor cada uma delas!
+      </p>
+    </ion-card-content>
+  </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-img src="assets/img/chapeu.png"></ion-img>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/page-grifinoria']">Grifinória</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/page-corvinal']">Corvinal</ion-button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-button [routerLink]="['/page-lufa-lufa']">Lufa-Lufa</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button [routerLink]="['/page-sonserina']">Sonserina</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

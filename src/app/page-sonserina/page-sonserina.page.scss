@@ -1,0 +1,35 @@
+$cor-sonserina-primaria: #28a745;
+$cor-sonserina-secundaria: #9b59b6;
+
+ion-card {
+  margin-bottom: 20px;
+}
+
+ion-card-header {
+  border-bottom: 1px solid lighten($cor-sonserina-primaria, 20%);
+}
+
+ion-card-title {
+  color: $cor-sonserina-primaria;
+}
+
+ion-card-subtitle {
+  font-size: smaller;
+  color: lighten($cor-sonserina-primaria, 30%);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+ion-button {
+  background-color: $cor-sonserina-primaria;
+  color: #fff;
+  margin-top: 20px;
+}

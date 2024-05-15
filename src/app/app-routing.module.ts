@@ -11,6 +11,22 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'page-grifinoria',
+    loadChildren: () => import('./page-grifinoria/page-grifinoria.module').then( m => m.PageGrifinoriaPageModule)
+  },
+  {
+    path: 'page-sonserina',
+    loadChildren: () => import('./page-sonserina/page-sonserina.module').then( m => m.PageSonserinaPageModule)
+  },
+  {
+    path: 'page-lufa-lufa',
+    loadChildren: () => import('./page-lufa-lufa/page-lufa-lufa.module').then( m => m.PageLufaLufaPageModule)
+  },
+  {
+    path: 'page-corvinal',
+    loadChildren: () => import('./page-corvinal/page-corvinal.module').then( m => m.PageCorvinalPageModule)
+  },
 ];
 
 @NgModule({
